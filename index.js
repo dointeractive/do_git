@@ -27,6 +27,6 @@ Shots.prototype = {
 }
 
 var shots = new Shots('body')
-shots.load('popular')
+shots.load('teams')
 shots.load('everyone')
 
