@@ -3,6 +3,10 @@ function Shots(el) {
 }
 
 Shots.prototype = {
+    popular: function () {
+        this.load('popular')
+    },
+
     load: function (list) {
         var url =
             'http://api.dribbble.com/shots' +
@@ -14,19 +18,21 @@ Shots.prototype = {
     },
 
     render: function (resp) {
-        var shots = resp.shots
+        var shots = resp.shots,
+            self = this
 
         shots.forEach(function (shot) {
             var img = $('<img>', {
                 src: shot.image_teaser_url
             })
             
-            this.$el.append(img)
-        }, this)
+            self.$el.append(img)
+        })
     }
 }
 
-var shots = new Shots('body')
-shots.load('teams')
-shots.load('everyone')
+var shots = new Shots('body'),
+    load = shots.load
+
+load('everyone')
 
