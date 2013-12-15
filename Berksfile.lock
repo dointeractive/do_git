@@ -1,0 +1,42 @@
+{
+  "sources": {
+    "apt": {
+      "locked_version": "2.3.0"
+    },
+    "postgresql": {
+      "locked_version": "0.13.0",
+      "git": "git://github.com/phlipper/chef-postgresql.git",
+      "ref": "2ea4b18178569549332028de27c3583717926888"
+    },
+    "rbenv": {
+      "locked_version": "1.7.0"
+    },
+    "rails": {
+      "path": "./cookbooks/rails"
+    },
+    "git": {
+      "locked_version": "2.8.4"
+    },
+    "dmg": {
+      "locked_version": "2.0.8"
+    },
+    "build-essential": {
+      "locked_version": "1.4.2"
+    },
+    "windows": {
+      "locked_version": "1.11.0"
+    },
+    "chef_handler": {
+      "locked_version": "1.1.4"
+    },
+    "yum": {
+      "locked_version": "2.4.4"
+    },
+    "runit": {
+      "locked_version": "1.4.6"
+    },
+    "ohai": {
+      "locked_version": "1.1.12"
+    }
+  }
+}
